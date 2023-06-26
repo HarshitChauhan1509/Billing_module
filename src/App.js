@@ -14,7 +14,8 @@ const totalAmount = () => {
 function App() {
   const componentRef = useRef();
   const handleGeneratePdf = () => {
-    html2canvas(componentRef.current)
+    html2canvas(componentRef.current , {allowTaint: true, useCORS: true
+    })
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png');
         const pdf = new jsPDF();
