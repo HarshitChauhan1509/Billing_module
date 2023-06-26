@@ -1,0 +1,30 @@
+body {
+  border: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: 700;
+}
+
+.container{
+  line-height: 1.6;
+  padding: 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 250px;
+  height: 150px;
+}
+
+.companyName {
+  font-weight: 600;
+  font-size: 2.5rem;
+
+}
